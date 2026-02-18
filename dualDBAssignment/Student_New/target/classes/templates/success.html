@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Success</title>
+    <style>
+        /* Modern Background & Centering */
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Success Card */
+        .success-container { 
+            width: 400px; 
+            padding: 40px; 
+            background-color: white;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        /* Checkmark Icon Placeholder */
+        .icon-circle {
+            width: 80px;
+            height: 80px;
+            background-color: #e8f5e9;
+            color: #4CAF50;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            margin: 0 auto 20px auto;
+        }
+
+        .success-msg { 
+            color: #2e7d32; 
+            font-size: 22px; 
+            font-weight: bold; 
+            line-height: 1.4;
+            margin-bottom: 30px;
+        }
+
+        /* Styled Back Link */
+        .back-link { 
+            display: inline-block; 
+            text-decoration: none; 
+            background-color: #2196F3;
+            color: white; 
+            padding: 12px 25px;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: background-color 0.3s, transform 0.1s;
+        }
+
+        .back-link:hover { 
+            background-color: #1976D2; 
+        }
+
+        .back-link:active {
+            transform: scale(0.98);
+        }
+
+        /* Small subtitle */
+        .database-info {
+            font-size: 13px;
+            color: #777;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="success-container">
+        <div class="icon-circle">✓</div>
+        
+        <div class="success-msg">
+            Student Record Saved Successfully!
+        </div>
+
+        <a href="/" class="back-link">Go Back to Form</a>
+
+        <div class="database-info">
+            Data synchronized across H2 and PostgreSQL
+        </div>
+    </div>
+
+</body>
+</html>
